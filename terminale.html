@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html data-theme="dark" class="dark" lang="fr">
     <head>
-        <script src="https://unpkg.com/alpinejs" defer></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.17/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -19,17 +18,7 @@
         <!-- Styles -->
     </head>
     <body class="font-sans antialiased">
-        <div x-data="{&quot;show&quot;:true,&quot;style&quot;:&quot;success&quot;,&quot;message&quot;:null}"
-            :class="{ 'bg-indigo-500': style == 'success', 'bg-red-700': style == 'danger', 'bg-gray-500': style != 'success' && style != 'danger' }"
-            style="display: none;"
-            x-show="show && message"
-            x-on:banner-message.window="
-                style = event.detail.style;
-                message = event.detail.message;
-                show = true;
-            ">
-    
-</div>
+       
 
         <div class="min-h-screen bg-gray-200 /*bg-gray-100*/ dark:bg-gray-900">
 
@@ -88,7 +77,11 @@
       </thead>
       <tbody class="divide-y divide-gray-200 dark:bg-gray-800 bg-white">
                 
-        <tr><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Hyperbole</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Nathan</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2020</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge bg-gradient-danger badge-sm">Mathématiques (EDS)</span></td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="Maths_EDS.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
+        <tr><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Hyperbole</td>
+            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Nathan</td>
+            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2020</td>
+            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge badge-error">Mathématiques (EDS)</span></td>
+            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="Maths_EDS.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
             Voir
             </a> 
             <!--<a class="mx-2" href="../numerique/maj-ressources.php?id=" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
@@ -96,7 +89,8 @@
             </a>--> </td>
         </tr>
             <tr>
-                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Hyperbole</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Nathan</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2020</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge bg-gradient-danger badge-sm">Mathématiques (Expertes)</span></td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="Maths_Option.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
+                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Hyperbole</td>
+                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Nathan</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2020</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge badge-error">Mathématiques (Expertes)</span></td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="Maths_Option.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
             Voir
             </a> 
             <!--<a class="mx-2" href="../numerique/maj-ressources.php?id=" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
@@ -104,22 +98,22 @@
             </a>--> </td>
         </tr>
             <tr>
-                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Espace</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Bordas</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2019</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge bg-gradient-info badge-sm">Physique-Chimie (EDS)</span></td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="Espace_EDS.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
+                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Espace</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Bordas</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2019</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge badge-info">Physique-Chimie (EDS)</span></td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="Espace_EDS.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
             Voir
             </a> 
             <!--<a class="mx-2" href="../numerique/maj-ressources.php?id=" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
             <i class="material-icons text-secondary position-relative text-lg">check</i>
-            </a>--> </td></tr><tr><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Histoire</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Nathan</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2020</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge bg-gradient-success badge-sm">Histoire-Géographie</span></td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="Histoire.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
+            </a>--> </td></tr><tr><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Histoire</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Nathan</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2020</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge badge-success">Histoire-Géographie</span></td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="Histoire.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
             Voir
             </a> 
             <!--<a class="mx-2" href="../numerique/maj-ressources.php?id=" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
             <i class="material-icons text-secondary position-relative text-lg">check</i>
-            </a>--> </td></tr><tr><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Géographie</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Nathan</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2020</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge bg-gradient-success badge-sm">Histoire-Géographie</span></td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="Geographie.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
+            </a>--> </td></tr><tr><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Géographie</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Nathan</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2020</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge badge-success">Histoire-Géographie</span></td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="Geographie.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
             Voir
             </a> 
             <!--<a class="mx-2" href="../numerique/maj-ressources.php?id=" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
             <i class="material-icons text-secondary position-relative text-lg">check</i>
-            </a>--> </td></tr><tr><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">ENS. Scientifique</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Belin</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2020</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge bg-gradient-info badge-sm">ENSS</span></td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="enss.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
+            </a>--> </td></tr><tr><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">ENS. Scientifique</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">Belin</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0">2020</td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><span class="badge badge-secondary">ENSS</span></td><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium dark:text-gray-100 text-gray-900 sm:pl-0"><a class="mx-2" href="enss.php" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
             Voir
             </a> 
             <!--<a class="mx-2" href="../numerique/maj-ressources.php?id=" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
